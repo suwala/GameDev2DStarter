@@ -7,7 +7,7 @@ import javax.microedition.khronos.opengles.GL10;
 import com.badlogic.androidgames.framework.Game;
 import com.badlogic.androidgames.framework.Input.TouchEvent;
 import com.badlogic.androidgames.framework.Screen;
-import com.badlogic.androidgames.framework.gl.BindableVertices;
+import com.badlogic.androidgames.framework.gl.Vertices;
 import com.badlogic.androidgames.framework.impl.GLGame;
 import com.badlogic.androidgames.framework.impl.GLGraphics;
 import com.badlogic.androidgames.framework.math.Vector2;
@@ -24,7 +24,7 @@ public class CannonScreenTest extends GLGame{
 		float FRUSTUM_WIDTH = 4.8f;
 		float FRUSTUM_HEIGHT = 3.2f;
 		GLGraphics glGraphics;
-		BindableVertices vertices;
+		Vertices vertices;
 		Vector2 cannonPos = new Vector2(2.4f,0.5f);
 		float cannonAngle = 0;
 		Vector2 touchPos = new Vector2();
@@ -32,7 +32,7 @@ public class CannonScreenTest extends GLGame{
 		public CannonScreen(Game game) {
 			super(game);
 			glGraphics = ((GLGame)game).getGLGraphics();
-			vertices = new BindableVertices(glGraphics, 3, 0, false, false);
+			vertices = new Vertices(glGraphics, 3, 0, false, false);
 			vertices.setVertices(new float[]{-0.5f,-0.5f,
 											 0.5f,0.0f,
 											 -0.5f,0.5f}, 0, 6);			

@@ -19,7 +19,7 @@ public class AndroidInput implements Input{
 		accelHandler = new AccelerometerHandler(context);
 		keyHandler = new KeyboardHandler(view);
 		
-		//SDKをチェックする事で、生成するインスタンスの分岐
+		//SDK繧偵メ繧ｧ繝�け縺吶ｋ莠九〒縲∫函謌舌☆繧九う繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ縺ｮ蛻�ｲ�
 		if(Integer.parseInt(VERSION.SDK) < 5)
 			touchHandler = new SingleTouchHandler(view, scaleX, scaleY);
 		else

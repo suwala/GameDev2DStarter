@@ -27,7 +27,12 @@
             android:label="Cannon Screen Test"
             android:configChanges="orientation|keyboard|keyboardHidden"
             android:screenOrientation="portrait" >
+            
 </activity>
+        <activity android:name="CannonGravityTest"
+            android:label="Cannon Grravity Test"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>
