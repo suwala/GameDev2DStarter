@@ -108,20 +108,16 @@ public class CannonGravityTest extends GLGame{
 
 		@Override
 		public void pause() {
-			// TODO 自動生成されたメソ�?��・スタ�?
 			
 		}
 
 		@Override
 		public void resume() {
-			// TODO 自動生成されたメソ�?��・スタ�?
 			
 		}
 
 		@Override
 		public void dispose() {
-			// TODO 自動生成されたメソ�?��・スタ�?
-			
 		}
 		
 	}

@@ -20,6 +20,8 @@ public class Texture {
 	int textureId;
 	int minFilter;
 	int magFilter;
+	public int width;
+	public int height;
 	
 	public Texture(GLGame glGame,String fileName){
 		this.glGraphics = glGame.getGLGraphics();
@@ -42,6 +44,8 @@ public class Texture {
 			GLUtils.texImage2D(GL10.GL_TEXTURE_2D, 0, bitmap, 0);
 			setFilters(GL10.GL_NEAREST,GL10.GL_NEAREST);
 			gl.glBindTexture(GL10.GL_TEXTURE_2D, 0);
+			width = bitmap.getWidth();
+			height = bitmap.getHeight();
 		}catch (IOException e){
 			throw new RuntimeException("Couldn't load texture '"+fileName+"'");
 		}finally{

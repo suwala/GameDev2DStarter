@@ -6,8 +6,9 @@
     <uses-sdk
         android:minSdkVersion="3"
         android:targetSdkVersion="15" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -15,7 +16,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="GameDev2DStarter"
-            android:label="@string/title_activity_andoroid_basics_starter" android:configChanges="keyboard|keyboardHidden|orientation">
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/title_activity_andoroid_basics_starter" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,16 +25,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="CannonScreenTest"
+            android:name="com.badlogic.androidgames.gamedev2d.CannonTest"
+            android:configChanges="orientation|keyboard|keyboardHidden"
             android:label="Cannon Screen Test"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="CannonGravityTest"
             android:configChanges="orientation|keyboard|keyboardHidden"
-            android:screenOrientation="portrait" >
-            
-</activity>
-        <activity android:name="CannonGravityTest"
             android:label="Cannon Grravity Test"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="CollisionTest"
             android:configChanges="orientation|keyboard|keyboardHidden"
-            android:screenOrientation="portrait" ></activity>
+            android:label="Collision Test"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="Camera2DTest"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="Camera2D Test"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="TextureAtlasTest"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="Texture Atlas Test"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>

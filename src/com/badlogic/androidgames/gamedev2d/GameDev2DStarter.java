@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class GameDev2DStarter extends ListActivity{
 	
-	String tests[] = {"CannonScreenTest","CannonGravityTest"};
+	String tests[] = {"CannonScreenTest","CannonGravityTest","CollisionTest","Camera2DTest","TextureAtlasTest"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
