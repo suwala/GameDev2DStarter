@@ -135,7 +135,7 @@ public class TextureAtlasTest extends GLGame{
 				camera.zoom = 1 + ball.position.y/WORLD_HEIGHT;
 			}else{
 				camera.position.set(WORLD_WIDTH/2,WORLD_HEIGHT/2);
-				camera.zoom = 1;
+				camera.zoom = 1.2f;
 			}
 			
 			
