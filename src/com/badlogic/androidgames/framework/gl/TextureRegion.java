@@ -9,7 +9,7 @@ public class TextureRegion {
 		this.u1 = x / texture.width;
 		this.v1 = y / texture.height;
 		this.u2 = this.u1 +width/texture.width;
-		this.v2 = this.v2 + height / texture.height;
+		this.v2 = this.v1 + height / texture.height;
 		this.texture = texture;
 	}
 

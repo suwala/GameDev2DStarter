@@ -54,6 +54,18 @@
             android:label="Texture Atlas Test"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="SpriteBatcherTest"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="Sprite Batcher Test"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="AnimationTest"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="Animation Test"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>
